@@ -13,15 +13,13 @@ There is the separate screen for viewing detailed information about the hotel an
 
 
 ## Features
-- [x] Swift 5.2
-- [x] Designed with basic UI controls according to Apple Design Guidelines
-- [x] Support all iPhone screen sizes
-- [x] MVVM architecture pattern
-- [x] Reactive programming with RxSwift 
-- [x] Store local data with Realm 
-- [x] Swinject for dependency injection
-- [ ] Unit-tests
-- [ ] UI tests
+- Swift 5.2
+- Designed with basic UI controls according to Apple Design Guidelines
+- Support all iPhone screen sizes
+- MVVM architecture pattern
+- Reactive programming with RxSwift 
+- Store local data with Realm 
+- Swinject for dependency injection
 
 ### Pods used
 - pod 'RxSwift'
