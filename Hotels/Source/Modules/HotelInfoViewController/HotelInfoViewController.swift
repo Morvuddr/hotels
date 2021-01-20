@@ -12,7 +12,7 @@ import RxSwift
 import RxCocoa
 import Swinject
 
-class HotelInfoViewController: UIViewController {
+final class HotelInfoViewController: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var hotelImageView: UIImageView!

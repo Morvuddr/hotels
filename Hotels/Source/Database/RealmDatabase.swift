@@ -11,7 +11,7 @@ import RealmSwift
 import RxSwift
 import RxRealm
 
-class RealmDatabase: Database {
+final class RealmDatabase: Database {
     
     func saveHotels(_ hotels: [Hotel]) {
         let realm = try! Realm()

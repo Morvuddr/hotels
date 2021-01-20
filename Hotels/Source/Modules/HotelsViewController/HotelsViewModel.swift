@@ -58,7 +58,7 @@ class HotelsViewModel: HotelsViewModeling {
             .take(1)
             .flatMap { _ -> Observable<[Hotel]> in
                 return networkingService.getHotels()
-                    .observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
+                    .observe(on: ConcurrentDispatchQueueScheduler(qos: .utility))
                     .do(onNext: { _ in loading.onNext(false) },
                         onError: { _ in error.onNext(ErrorModel(.badNetwork)) },
                         onSubscribed: { loading.onNext(true) })
@@ -73,7 +73,7 @@ class HotelsViewModel: HotelsViewModeling {
             .filter({ !$0.isEmpty })
             .distinctUntilChanged({ $0.count == $1.count })
             .map({ $0.map{ HotelStruct(hotel: $0 )} })
-            .observeOn(ConcurrentDispatchQueueScheduler(qos: .userInitiated))
+            .observe(on: ConcurrentDispatchQueueScheduler(qos: .userInitiated))
         
         let sortedHotels = Observable.combineLatest(hotels, selectedSort)
             .map { (hotels, sorting) -> [HotelStruct] in

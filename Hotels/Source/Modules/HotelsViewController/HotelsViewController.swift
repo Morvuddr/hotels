@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 import Swinject
 
-class HotelsViewController: UIViewController {
+final class HotelsViewController: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!

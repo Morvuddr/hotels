@@ -11,7 +11,6 @@
 		CF0DC4E024F7DA7900570592 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0DC4DF24F7DA7900570592 /* ErrorModel.swift */; };
 		CF0DC4E424F7DBC900570592 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0DC4E324F7DBC900570592 /* ErrorMessage.swift */; };
 		CF0DC4EA24F7E15100570592 /* HotelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0DC4E924F7E15100570592 /* HotelTableViewCell.swift */; };
-		CF0DC4ED24F7E4FC00570592 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0DC4EC24F7E4FC00570592 /* DesignableView.swift */; };
 		CF0DC4EF24F7E53700570592 /* UIView+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0DC4EE24F7E53700570592 /* UIView+IBInspectable.swift */; };
 		CF0DC4F124F7FECE00570592 /* HotelTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0DC4F024F7FECE00570592 /* HotelTableViewCellModel.swift */; };
 		CF0DC4F324F801B300570592 /* ReuseIdentifying.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0DC4F224F801B300570592 /* ReuseIdentifying.swift */; };
@@ -50,7 +49,6 @@
 		CF0DC4DF24F7DA7900570592 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		CF0DC4E324F7DBC900570592 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		CF0DC4E924F7E15100570592 /* HotelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelTableViewCell.swift; sourceTree = "<group>"; };
-		CF0DC4EC24F7E4FC00570592 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		CF0DC4EE24F7E53700570592 /* UIView+IBInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+IBInspectable.swift"; sourceTree = "<group>"; };
 		CF0DC4F024F7FECE00570592 /* HotelTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelTableViewCellModel.swift; sourceTree = "<group>"; };
 		CF0DC4F224F801B300570592 /* ReuseIdentifying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifying.swift; sourceTree = "<group>"; };
@@ -122,7 +120,6 @@
 				CF75A23A24FBD265008C4BDB /* SharedContainer.swift */,
 				CF0DC4E224F7DBB500570592 /* Constants */,
 				CF0DC4E524F7DCB500570592 /* Extensions */,
-				CF0DC4EB24F7E4D300570592 /* UIPrototypes */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -157,14 +154,6 @@
 				CF75A24024FC225C008C4BDB /* MapViewController */,
 			);
 			path = Modules;
-			sourceTree = "<group>";
-		};
-		CF0DC4EB24F7E4D300570592 /* UIPrototypes */ = {
-			isa = PBXGroup;
-			children = (
-				CF0DC4EC24F7E4FC00570592 /* DesignableView.swift */,
-			);
-			path = UIPrototypes;
 			sourceTree = "<group>";
 		};
 		CF1A1AAA24F9489F004B5D1A /* HotelInfoViewController */ = {
@@ -415,7 +404,6 @@
 				CF75A24624FC3354008C4BDB /* ImageCropper.swift in Sources */,
 				CF95669324F5AA9700C1B4FD /* NetworkingService.swift in Sources */,
 				CF3A251F24FB9A02000D9516 /* UIViewController+Rx.swift in Sources */,
-				CF0DC4ED24F7E4FC00570592 /* DesignableView.swift in Sources */,
 				CF75A24224FC2288008C4BDB /* MapViewController.swift in Sources */,
 				CF75A23D24FBEA1F008C4BDB /* HotelStruct.swift in Sources */,
 				CF1A1ABE24FB0F49004B5D1A /* DataManager.swift in Sources */,

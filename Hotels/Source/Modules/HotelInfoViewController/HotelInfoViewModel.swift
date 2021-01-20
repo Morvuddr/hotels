@@ -64,7 +64,7 @@ class HotelInfoViewModel: HotelInfoViewModeling {
             .take(1)
             .flatMap { (_) -> Observable<Hotel?> in
                 return networkingService.getHotelInfo(hotelId: hotelId)
-                    .observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
+                    .observe(on: ConcurrentDispatchQueueScheduler(qos: .utility))
                     .do(onNext: { _ in loading.onNext(false) },
                         onError: { _ in error.onNext(ErrorModel(.badNetwork)) },
                         onSubscribed: { loading.onNext(true) })
@@ -78,7 +78,7 @@ class HotelInfoViewModel: HotelInfoViewModeling {
         
         let hotel = database.getHotel(withId: hotelId)
             .map({ HotelStruct(hotel: $0) })
-            .observeOn(ConcurrentDispatchQueueScheduler(qos: .userInitiated))
+            .observe(on: ConcurrentDispatchQueueScheduler(qos: .userInitiated))
             .share(replay: 1)
         
         self.hotelName = hotel.map{ $0.name }.asDriver(onErrorJustReturn: "")
@@ -99,7 +99,7 @@ class HotelInfoViewModel: HotelInfoViewModeling {
                 guard let data = data else {
                     return networkingService
                         .getHotelImage(imageId: imageId)
-                        .observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
+                        .observe(on: ConcurrentDispatchQueueScheduler(qos: .utility))
                         .flatMap({ (imgData) -> Observable<Data> in
                             return imageCropper.cropImageBorder(for: imgData, borderWidth: 1)
                         })

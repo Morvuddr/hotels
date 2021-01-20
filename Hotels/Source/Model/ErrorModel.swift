@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ErrorModel: Error {
+final class ErrorModel: Error {
     
     // MARK: - Properties
     var message: String

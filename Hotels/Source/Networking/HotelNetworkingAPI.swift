@@ -9,7 +9,7 @@
 import Foundation
 import RxSwift
 
-class HotelsNetworkingAPI: NetworkingService {
+final class HotelsNetworkingAPI: NetworkingService {
     
     private let baseURL = "https://raw.githubusercontent.com/iMofas/ios-android-test/master/"
     
