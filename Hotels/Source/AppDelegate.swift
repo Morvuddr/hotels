@@ -10,7 +10,7 @@ import UIKit
 import Swinject
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     let container = Container.sharedContainer
@@ -22,7 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
         
         self.instantiateRootViewController(for: window)
-        
         
         return true
     }
