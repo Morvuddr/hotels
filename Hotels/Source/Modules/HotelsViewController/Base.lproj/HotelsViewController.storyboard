@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="135" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9OE-2r-7pe">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="145" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9OE-2r-7pe">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -122,7 +122,7 @@
                             <constraint firstAttribute="bottom" secondItem="9OE-2r-7pe" secondAttribute="bottom" id="8Wc-ot-G3E"/>
                             <constraint firstItem="9OE-2r-7pe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9yi-zm-x3n"/>
                             <constraint firstAttribute="trailing" secondItem="9OE-2r-7pe" secondAttribute="trailing" id="SFh-y7-QLz"/>
-                            <constraint firstItem="9OE-2r-7pe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Xc3-XB-iAR"/>
+                            <constraint firstItem="9OE-2r-7pe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Xc3-XB-iAR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Hotels" id="13C-qo-HPm"/>
