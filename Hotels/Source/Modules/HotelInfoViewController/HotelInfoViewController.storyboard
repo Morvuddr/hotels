@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Uk-hm-B4T">
+    <device id="retina5_5" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hotel Info View Controller-->
+        <scene sceneID="0t5-9F-mBz">
+            <objects>
+                <viewController id="9Uk-hm-B4T" customClass="HotelInfoViewController" customModule="Hotels" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hcd-Mg-7mU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kai-Fn-hIM">
+                                <rect key="frame" x="16" y="248.99999999999997" width="382" height="33.666666666666657"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="7he-LM-xwZ">
+                                <rect key="frame" x="16" y="294.33333333333331" width="30" height="30"/>
+                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5qY-AH-i9j"/>
+                                    <constraint firstAttribute="width" constant="30" id="STk-P1-tev"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VmZ-yz-l46">
+                                <rect key="frame" x="54" y="298.66666666666669" width="344" height="21.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="e4b-te-0yA">
+                                <rect key="frame" x="16" y="335" width="30" height="30"/>
+                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Caq-3x-rHt"/>
+                                    <constraint firstAttribute="height" constant="30" id="UNo-Cu-eCf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="stars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bky-Yd-Wpw">
+                                <rect key="frame" x="54" y="340.33333333333331" width="145" height="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bed" translatesAutoresizingMaskIntoConstraints="NO" id="dad-HZ-Zoj">
+                                <rect key="frame" x="207" y="335" width="30" height="30"/>
+                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fXU-Vu-au2"/>
+                                    <constraint firstAttribute="width" constant="30" id="mLR-RD-Laj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rooms" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBL-mO-6HQ">
+                                <rect key="frame" x="245" y="340.33333333333331" width="153" height="19.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="adF-8c-p5F">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="233"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="adF-8c-p5F" secondAttribute="height" multiplier="16:9" id="lXb-MN-VXq"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Bky-Yd-Wpw" firstAttribute="centerY" secondItem="DBL-mO-6HQ" secondAttribute="centerY" id="1Gk-4D-vbJ"/>
+                            <constraint firstItem="dad-HZ-Zoj" firstAttribute="centerX" secondItem="INU-2k-3NB" secondAttribute="centerX" constant="15" id="2Dl-Ef-gx3"/>
+                            <constraint firstItem="Kai-Fn-hIM" firstAttribute="top" secondItem="adF-8c-p5F" secondAttribute="bottom" constant="16" id="4hI-E7-g9f"/>
+                            <constraint firstItem="e4b-te-0yA" firstAttribute="leading" secondItem="INU-2k-3NB" secondAttribute="leading" constant="16" id="DNC-Cd-jfl"/>
+                            <constraint firstItem="Kai-Fn-hIM" firstAttribute="leading" secondItem="INU-2k-3NB" secondAttribute="leading" constant="16" id="PJ2-Mn-axc"/>
+                            <constraint firstItem="VmZ-yz-l46" firstAttribute="top" secondItem="Kai-Fn-hIM" secondAttribute="bottom" constant="16" id="R7E-Bc-9QM"/>
+                            <constraint firstItem="DBL-mO-6HQ" firstAttribute="top" secondItem="VmZ-yz-l46" secondAttribute="bottom" constant="20" id="TIX-PI-VZF"/>
+                            <constraint firstItem="INU-2k-3NB" firstAttribute="trailing" secondItem="Kai-Fn-hIM" secondAttribute="trailing" constant="16" id="UkH-rC-PGT"/>
+                            <constraint firstItem="dad-HZ-Zoj" firstAttribute="centerY" secondItem="DBL-mO-6HQ" secondAttribute="centerY" id="WBv-Un-VZB"/>
+                            <constraint firstItem="adF-8c-p5F" firstAttribute="leading" secondItem="INU-2k-3NB" secondAttribute="leading" id="YKO-ol-Cyz"/>
+                            <constraint firstItem="7he-LM-xwZ" firstAttribute="leading" secondItem="INU-2k-3NB" secondAttribute="leading" constant="16" id="bRt-SN-bob"/>
+                            <constraint firstItem="VmZ-yz-l46" firstAttribute="leading" secondItem="7he-LM-xwZ" secondAttribute="trailing" constant="8" id="c72-cA-bow"/>
+                            <constraint firstItem="INU-2k-3NB" firstAttribute="trailing" secondItem="VmZ-yz-l46" secondAttribute="trailing" constant="16" id="cLC-6B-8Wh"/>
+                            <constraint firstItem="dad-HZ-Zoj" firstAttribute="leading" secondItem="Bky-Yd-Wpw" secondAttribute="trailing" constant="8" id="eAj-RA-I1b"/>
+                            <constraint firstItem="adF-8c-p5F" firstAttribute="top" secondItem="INU-2k-3NB" secondAttribute="top" id="eco-uO-JLt"/>
+                            <constraint firstItem="DBL-mO-6HQ" firstAttribute="leading" secondItem="dad-HZ-Zoj" secondAttribute="trailing" constant="8" id="hJs-fS-7o2"/>
+                            <constraint firstItem="e4b-te-0yA" firstAttribute="centerY" secondItem="Bky-Yd-Wpw" secondAttribute="centerY" id="hhz-R2-tI0"/>
+                            <constraint firstItem="Bky-Yd-Wpw" firstAttribute="leading" secondItem="e4b-te-0yA" secondAttribute="trailing" constant="8" id="nI8-Sa-ErC"/>
+                            <constraint firstItem="INU-2k-3NB" firstAttribute="trailing" secondItem="DBL-mO-6HQ" secondAttribute="trailing" constant="16" id="oZ7-h5-hwq"/>
+                            <constraint firstItem="adF-8c-p5F" firstAttribute="trailing" secondItem="INU-2k-3NB" secondAttribute="trailing" id="p51-lh-tSf"/>
+                            <constraint firstItem="7he-LM-xwZ" firstAttribute="centerY" secondItem="VmZ-yz-l46" secondAttribute="centerY" id="u6t-i6-3wM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="INU-2k-3NB"/>
+                    </view>
+                    <connections>
+                        <outlet property="availableRoomsLabel" destination="DBL-mO-6HQ" id="gFR-oq-LE5"/>
+                        <outlet property="hotelAddressLabel" destination="VmZ-yz-l46" id="3gA-gW-R87"/>
+                        <outlet property="hotelImageView" destination="adF-8c-p5F" id="dc6-vh-R8r"/>
+                        <outlet property="hotelNameLabel" destination="Kai-Fn-hIM" id="2eC-7o-OHm"/>
+                        <outlet property="starsLabel" destination="Bky-Yd-Wpw" id="Fji-rP-JMQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pJM-IE-2lC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65.217391304347828" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bed" width="20" height="15"/>
+        <image name="location" width="15" height="15"/>
+        <image name="placeholder" width="1200" height="800"/>
+        <image name="star" width="16" height="15"/>
+    </resources>
+</document>
