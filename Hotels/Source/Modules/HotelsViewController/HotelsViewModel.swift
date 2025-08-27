@@ -71,8 +71,8 @@ class HotelsViewModel: HotelsViewModeling {
         
         let hotels = database.getHotels()
             .filter({ !$0.isEmpty })
-            .distinctUntilChanged({ $0.count == $1.count })
-            .map({ $0.map{ HotelStruct(hotel: $0 )} })
+            .map({ $0.map { HotelStruct(hotel: $0) } })
+            .distinctUntilChanged()
             .observe(on: ConcurrentDispatchQueueScheduler(qos: .userInitiated))
         
         let sortedHotels = Observable.combineLatest(hotels, selectedSort)
