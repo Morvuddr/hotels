@@ -9,7 +9,7 @@
 import Foundation
 
 enum ErrorMessage: String {
-    case general = "Error occured"
+    case general = "Error occurred"
     case badNetwork = "Failed to load data. Try again later."
     case failedToLoadImage = "Failed to load image"
     case failedToLoadHotel = "Failed to load hotel information"
