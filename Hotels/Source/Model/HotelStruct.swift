@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct HotelStruct {
+struct HotelStruct: Equatable {
     let id: Int
     let name: String
     let address: String
