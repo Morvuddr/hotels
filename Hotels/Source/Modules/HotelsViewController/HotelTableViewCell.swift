@@ -10,7 +10,7 @@ import UIKit
 
 class HotelTableViewCell: UITableViewCell, ReuseIdentifying {
     
-    // MARK: - Outlet
+    // MARK: - Outlets
     @IBOutlet weak var starsLabel: UILabel!
     @IBOutlet weak var hotelNameLabel: UILabel!
     @IBOutlet weak var hotelAddressLabel: UILabel!
